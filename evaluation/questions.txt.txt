@@ -1,0 +1,145 @@
+Q01. What is machine learning?
+Answerability: Answerable Evidence: S01
+Expected answer: ML is a field of AI where systems learn patterns from data to make predictions or decisions without
+every rule being explicitly programmed.
+Scoring note: Core definition; do not claim ML automatically proves causation.
+
+Q02. Which learning type uses labelled examples, and what are its two common task types?
+Answerability: Answerable Evidence: S02
+Expected answer: Supervised learning uses labelled examples. Its two common task types are classification and
+regression.
+Scoring note: Both parts required.
+
+Q03. What is the difference between classification and regression?
+Answerability: Answerable Evidence: S02
+Expected answer: Classification predicts categories; regression predicts numerical values.
+Scoring note: One concise contrast is sufficient.
+
+Q04. What is the purpose of a validation set, and how is it different from a test set?
+Answerability: Answerable Evidence: S03
+Expected answer: A validation set helps select models and hyperparameters. A test set is held back for a final
+performance estimate after choices are complete.
+Scoring note: Mention that repeated test-set tuning undermines the estimate.
+
+Q05. A model scores 99% on training data but 72% on validation data. What problem might this indicate?
+Answerability: Answerable Evidence: S04
+Expected answer: It may indicate overfitting: the model fits training examples well but generalizes poorly to unseen data.
+Scoring note: Accept cautious wording such as 'likely overfitting'.
+
+Q06. Give two examples of data leakage and one way to prevent it.
+Answerability: Answerable Evidence: S05
+Expected answer: Examples include scaling the full dataset before splitting and using a feature recorded after the
+outcome. Fit preprocessing on training data only and use a split strategy that matches deployment.
+Scoring note: Two examples plus a prevention method.
+
+Q07. In an imbalanced fraud-detection dataset, why might accuracy be misleading?
+Answerability: Answerable Evidence: S06
+Expected answer: A model can predict the majority non-fraud class most of the time and still achieve high accuracy while
+missing many fraud cases. Precision, recall, F1, and a confusion matrix provide more detail.
+Scoring note: Must explain class imbalance and missed positives.
+
+Q08. What does recall measure in classification?
+Answerability: Answerable Evidence: S06
+Expected answer: Recall is the fraction of actual positive cases that the model correctly identifies.
+Scoring note: Equivalent formula: TP/(TP+FN), if defined correctly.
+
+Q09. Which regression metric penalizes large errors more strongly: MAE or MSE?
+Answerability: Answerable Evidence: S07
+Expected answer: MSE, because it squares errors before averaging, giving larger errors disproportionately more weight.
+Scoring note: RMSE also derives from squared errors, but the direct answer is MSE.
+
+Q10. Why should the final test set not be used repeatedly to choose hyperparameters?
+Answerability: Answerable Evidence: S03; S08
+Expected answer: Repeated selection based on test results leaks information from the test set into development and
+makes the final performance estimate less trustworthy.
+Scoring note: Must mention biased/less trustworthy final estimate.
+
+Q11. Why is feature scaling often important for KNN?
+Answerability: Answerable Evidence: S09
+Expected answer: KNN relies on distances between examples. Features with larger numerical scales can dominate
+those distances, so scaling can make features contribute more comparably.
+Scoring note: Do not say scaling is always mandatory for every distance or dataset.
+
+Q12. What is one key difference between a decision tree and a random forest?
+Answerability: Answerable Evidence: S10
+Expected answer: A decision tree uses one sequence of splits; a random forest aggregates predictions from many trees
+trained with randomness, often reducing variance.
+Scoring note: Both single-tree and ensemble aspects should be present.
+
+Q13. What does XGBoost do, and is it guaranteed to beat every other model?
+Answerability: Answerable Evidence: S11
+Expected answer: XGBoost is an optimized gradient-boosting library that builds an additive ensemble in stages. It is
+often effective on tabular data but is not guaranteed to outperform every alternative.
+Scoring note: Must reject the guarantee.
+
+Q14. Briefly explain how a neural network learns.
+Answerability: Answerable Evidence: S12
+Expected answer: It adjusts learned weights to reduce a loss function, typically using gradient-based optimization and
+backpropagation.
+Scoring note: A short explanation is enough.
+
+Q15. What is an embedding used for in semantic search?
+Answerability: Answerable Evidence: S13
+Expected answer: An embedding maps text into a numerical vector intended to capture semantic or structural
+relationships; vectors can be compared to retrieve passages related to a query.
+Scoring note: Mention vectors and similarity/retrieval.
+
+Q16. List the main stages of a basic RAG pipeline in order.
+Answerability: Answerable Evidence: S14
+Expected answer: Ingest documents, split into chunks, create embeddings, store vectors and metadata, retrieve relevant
+chunks for a query, optionally rerank them, and generate a grounded answer.
+Scoring note: Order may vary slightly; include retrieval before generation.
+
+Q17. What is top-k in retrieval, and what trade-off occurs when k increases?
+Answerability: Answerable Evidence: S15
+Expected answer: Top-k is the number of candidate passages returned. Increasing k may improve evidence coverage
+but can also add irrelevant context, latency, and token cost.
+Scoring note: Mention both potential benefit and cost.
+
+Q18. Can a reranker find evidence that the first-stage retriever did not return? Explain.
+Answerability: Answerable Evidence: S15
+Expected answer: Not in a typical retrieve-then-rerank pipeline. A reranker reorders retrieved candidates; it cannot
+recover evidence absent from the candidate set.
+Scoring note: Must distinguish reranking from first-stage retrieval.
+
+Q19. Name two retrieval metrics and two answer-quality checks for RAG.
+Answerability: Answerable Evidence: S16
+Expected answer: Retrieval metrics include Recall@k, Precision@k, and reciprocal rank. Answer checks include
+correctness against a reference, faithfulness to retrieved context, relevance, and appropriate abstention.
+Scoring note: At least two examples from each category.
+
+Q20. Why should an ML/RAG system record model, prompt, embedding, index, and dataset versions?
+Answerability: Answerable Evidence: S17
+Expected answer: Version tracking makes experiments reproducible and helps identify which configuration caused a
+change in results.
+Scoring note: Accept equivalent explanation.
+
+Q21. What exact validation accuracy did the author of this PDF achieve on their own KNN project?
+Answerability: Unanswerable Evidence: None
+Expected answer: The corpus does not provide an author's personal KNN project results. The system should say this
+information is not available in the supplied sources.
+Scoring note: Must not invent a percentage or imply this PDF reports a real project.
+
+Q22. Which embedding model and vector database does the author recommend as the single best production
+combination?
+Answerability: Unanswerable Evidence: None
+Expected answer: The corpus does not name a universally best embedding-model/vector-database combination.
+Selection depends on the use case and should be evaluated empirically.
+Scoring note: Should not invent a specific pair.
+
+Q23. What is the current market salary for an AI engineer in Kochi today?
+Answerability: Unanswerable Evidence: None
+Expected answer: The supplied corpus contains no current salary data. The system should say it cannot answer from
+this knowledge base.
+Scoring note: Do not answer from general knowledge; this is a corpus-grounding test.
+
+Q24. According to the corpus, what exact chunk size guarantees perfect RAG accuracy?
+Answerability: Unanswerable Evidence: S15
+Expected answer: No chunk size guarantees perfect RAG accuracy. The corpus suggests testing chunk sizes and
+explains trade-offs between context loss and distracting material.
+Scoring note: Correctly reject the false premise.
+
+Q25. What is the name of the company that created the benchmark's embedding model?
+Answerability: Unanswerable Evidence: None
+Expected answer: The corpus does not specify an embedding model or its creator.
+Scoring note: Must abstain rather than guess.

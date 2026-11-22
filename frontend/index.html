@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Assistant</title>
+  <link rel="stylesheet" href="/app/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Mobile Backdrop -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- ── Sidebar ───────────────────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="logo-icon">◈</span>
+          <span class="logo-text">RAG Studio</span>
+        </div>
+        <button class="icon-btn sidebar-close-btn" id="sidebarCloseBtn" title="Close sidebar" aria-label="Close sidebar">✕</button>
+      </div>
+
+      <!-- Upload Section -->
+      <section class="sidebar-section">
+        <h3 class="section-label">Documents</h3>
+
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="fileInput" hidden />
+          <div class="upload-icon">📄</div>
+          <p class="upload-hint">Drop any file or <button class="link-btn" id="browseBtn">browse</button></p>
+          <p class="upload-sub">Processing depends on server format support</p>
+        </div>
+
+        <div class="upload-status" id="uploadStatus" hidden>
+          <div class="status-bar">
+            <div class="status-fill" id="statusFill"></div>
+          </div>
+          <span class="status-text" id="statusText">Uploading…</span>
+        </div>
+      </section>
+
+      <!-- Uploaded Files -->
+      <section class="sidebar-section grow">
+        <div class="section-header-row">
+          <h3 class="section-label">Loaded files</h3>
+          <button class="icon-btn" id="refreshBtn" title="Refresh">↻</button>
+        </div>
+        <ul class="file-list" id="fileList">
+          <li class="file-item placeholder">No files yet</li>
+        </ul>
+      </section>
+
+      <div class="sidebar-footer">
+        <span class="version-tag">RAG v1.0</span>
+      </div>
+    </aside>
+
+    <!-- ── Main area ─────────────────────────────────────────────── -->
+    <main class="main">
+
+      <!-- Top bar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-btn menu-btn" id="menuToggle" title="Open menu" aria-label="Open navigation menu">☰</button>
+          <div>
+            <h1 class="page-title">Chat</h1>
+            <span class="subtitle">Ask anything about your documents</span>
+          </div>
+        </div>
+        <button class="btn btn-ghost" id="clearBtn">Clear chat</button>
+      </header>
+
+      <!-- Chat window -->
+      <div class="chat-window" id="chatWindow">
+        <div class="welcome-state" id="welcomeState">
+          <div class="welcome-icon">💬</div>
+          <h2>Start a conversation</h2>
+          <p>Upload a PDF in the sidebar, then ask a question below.</p>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar">
+        <textarea
+          id="chatInput"
+          class="chat-textarea"
+          placeholder="Ask a question about your documents…"
+          aria-label="Ask a question about your documents"
+          rows="1"
+        ></textarea>
+        <button class="btn btn-primary" id="sendBtn">
+          <span id="sendLabel">Send</span>
+          <span id="sendSpinner" class="spinner" hidden></span>
+        </button>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="/app/app.js"></script>
+</body>
+</html>
+

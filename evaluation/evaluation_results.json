@@ -1,0 +1,1935 @@
+{
+  "summary": {
+    "total_questions": 25,
+    "answerable_count": 20,
+    "unanswerable_count": 5,
+    "evidence_retrieval_rate_pct": 100.0,
+    "answer_correctness_rate_pct": 100.0,
+    "mean_correctness_answerable": 2,
+    "overall_mean_correctness": 2,
+    "faithfulness_rate_pct": 96.0,
+    "mean_faithfulness": 1.92,
+    "abstention_accuracy_pct": 100.0,
+    "mean_abstention_score": 2,
+    "latency_stats": {
+      "total_median_sec": 18.436,
+      "total_mean_sec": 17.497,
+      "total_p95_sec": 21.128,
+      "retrieval_mean_sec": 1.526,
+      "generation_mean_sec": 15.971
+    }
+  },
+  "results": [
+    {
+      "qid": "Q01",
+      "question": "What is machine learning?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S01"
+      ],
+      "evidence_found": {
+        "S01": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "ML is a field of AI where systems learn patterns from data to make predictions or decisions without every rule being explicitly programmed.",
+      "scoring_note": "Core definition; do not claim ML automatically proves causation.",
+      "generated_answer": "**Machine learning (ML)** is a branch of artificial intelligence in which computer systems automatically learn patterns from data to make predictions or decisions, without being explicitly programmed with every rule. In a typical supervised‑learning workflow, the model is trained on examples that include known target values, and then its performance is evaluated on separate data that was not used for fitting. ML discovers predictive associations but does not by itself establish causal relationships.  \n\n**Sources**  \n- Doc 1, Section S01 – “What machine learning is.”  ",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 8.4975,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 2,
+          "score": 2.2049,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 3,
+          "score": -5.8038,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 4,
+          "score": -9.5459,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 5,
+          "score": -9.8756,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 6,
+          "score": -10.0381,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 7,
+          "score": -10.1095,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 8,
+          "score": -10.6455,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 9,
+          "score": -10.906,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -11.0956,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer accurately defines machine learning as a field of AI where systems learn patterns from data to make predictions or decisions without explicit programming, matching the expected answer.",
+      "faithfulness_reason": "All statements (definition, supervised workflow, and note on causation) are directly supported by Doc 1, Section S01, the retrieved context.",
+      "latency": {
+        "retrieval_sec": 1.159,
+        "generation_sec": 1.994,
+        "total_sec": 3.153
+      }
+    },
+    {
+      "qid": "Q02",
+      "question": "Which learning type uses labelled examples, and what are its two common task types?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S02"
+      ],
+      "evidence_found": {
+        "S02": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Supervised learning uses labelled examples. Its two common task types are classification and regression.",
+      "scoring_note": "Both parts required.",
+      "generated_answer": "**Answer**\n\nThe learning type that uses labelled examples is **supervised learning**.  \nIts two most common task types are:\n\n1. **Classification** – predicting categorical labels (e.g., “fraudulent” vs. “legitimate”).  \n2. **Regression** – predicting numerical values (e.g., house price, delivery time).\n\n**Sources**\n\n- Doc 1, Section S02 — “Supervised learning uses labelled examples… Classification predicts categories… regression predicts numerical values.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 3.5862,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 2,
+          "score": -5.6023,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 3,
+          "score": -6.2131,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 4,
+          "score": -8.4771,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 5,
+          "score": -8.8442,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 6,
+          "score": -9.2627,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 7,
+          "score": -9.4436,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 8,
+          "score": -9.9139,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 9,
+          "score": -10.4499,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -10.9537,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly identifies supervised learning as the type that uses labelled examples and lists classification and regression as its two common task types, matching the expected answer.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1 (Section S02), which defines supervised learning, classification, and regression.",
+      "latency": {
+        "retrieval_sec": 1.159,
+        "generation_sec": 1.217,
+        "total_sec": 2.376
+      }
+    },
+    {
+      "qid": "Q03",
+      "question": "What is the difference between classification and regression?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S02"
+      ],
+      "evidence_found": {
+        "S02": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Classification predicts categories; regression predicts numerical values.",
+      "scoring_note": "One concise contrast is sufficient.",
+      "generated_answer": "**Classification vs. Regression**\n\n| Aspect | Classification | Regression |\n|--------|----------------|------------|\n| **Goal** | Predict a **discrete class/label** (e.g., “spam” vs. “not‑spam”, “fraudulent” vs. “legitimate”). | Predict a **continuous numeric value** (e.g., house price, delivery time). |\n| **Output type** | Categorical (often represented as class IDs or probabilities). | Real‑valued (a single number or a vector of numbers). |\n| **Typical metrics** | Accuracy, precision, recall, F1‑score, confusion matrix, PR‑AUC. | Mean Absolute Error (MAE), Mean Squared Error (MSE), Root MSE (RMSE), R‑squared. |\n| **Use case examples** | Fraud detection, image‑type identification, sentiment polarity. | Predicting sales amount, estimating time‑to‑delivery, forecasting temperature. |\n\n**Why the difference matters**  \n- Classification metrics focus on how many predictions fall into the correct *category* and on the trade‑off between false positives and false negatives.  \n- Regression metrics measure how close the predicted *numeric* values are to the true values, penalizing larger errors more heavily (e.g., MSE vs. MAE).  \n\n**Sources**  \n- Doc 1: Describes classification metrics (accuracy, precision, recall, F1) and regression metrics (MAE, MSE, RMSE, R‑squared).  \n- Doc 2: States that “Classification predicts categories…; regression predicts numerical values.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -1.5105,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 2,
+          "score": -4.0053,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 3,
+          "score": -9.7245,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 4,
+          "score": -9.7484,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 5,
+          "score": -9.7806,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 6,
+          "score": -10.337,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 7,
+          "score": -10.4586,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 8,
+          "score": -11.2344,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 9,
+          "score": -11.2675,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.3279,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly states that classification predicts discrete categories while regression predicts continuous numeric values, matching the expected contrast.",
+      "faithfulness_reason": "All claims (category vs. numeric prediction, metric types, and example use‑cases) are supported by the retrieved documents (Doc 2 for the core definition and Doc 1 for the metric details).",
+      "latency": {
+        "retrieval_sec": 1.093,
+        "generation_sec": 16.865,
+        "total_sec": 17.958
+      }
+    },
+    {
+      "qid": "Q04",
+      "question": "What is the purpose of a validation set, and how is it different from a test set?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S03"
+      ],
+      "evidence_found": {
+        "S03": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "A validation set helps select models and hyperparameters. A test set is held back for a final performance estimate after choices are complete.",
+      "scoring_note": "Mention that repeated test-set tuning undermines the estimate.",
+      "generated_answer": "**Purpose of a validation set**  \n- The validation set is used **during model development** to evaluate how changes such as different algorithms, hyper‑parameter settings, or decision thresholds affect performance.  \n- It guides the selection of the best model and its configuration before the final evaluation.\n\n**How it differs from a test set**  \n- The **test set** is kept completely separate and is only used **once**, after all modeling choices have been fixed, to obtain an unbiased estimate of how the final model will perform on new, unseen data.  \n- Using the test set for tuning would leak information about it into the development process, making the final performance estimate less trustworthy.\n\n**Sources**  \n- Doc 1: “The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, relatively unbiased estimate of performance after choices are complete. Repeatedly tuning against the test set leaks information … makes the final estimate less trustworthy.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 4.8354,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 2,
+          "score": -4.8162,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 3,
+          "score": -7.3116,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 4,
+          "score": -7.4976,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 5,
+          "score": -7.6973,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 6,
+          "score": -9.1278,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 7,
+          "score": -10.2381,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 8,
+          "score": -10.2811,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 9,
+          "score": -11.1887,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.3351,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer fully covers the purpose of a validation set (model/hyperparameter selection) and the distinction that a test set is reserved for a final unbiased performance estimate, including the note about test‑set tuning degrading trustworthiness.",
+      "faithfulness_reason": "All statements are directly supported by the retrieved Doc 1 excerpt; no unsupported or hallucinated information is present.",
+      "latency": {
+        "retrieval_sec": 1.228,
+        "generation_sec": 17.443,
+        "total_sec": 18.671
+      }
+    },
+    {
+      "qid": "Q05",
+      "question": "A model scores 99% on training data but 72% on validation data. What problem might this indicate?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S04"
+      ],
+      "evidence_found": {
+        "S04": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "It may indicate overfitting: the model fits training examples well but generalizes poorly to unseen data.",
+      "scoring_note": "Accept cautious wording such as 'likely overfitting'.",
+      "generated_answer": "The large gap between the training accuracy (99 %) and the validation accuracy (72 %) suggests that the model is **over‑fitting** – it has learned patterns (or even noise) that exist in the training set but do not generalize to unseen data.\n\n**Why this fits the description**\n\n- Overfitting is characterized by very strong performance on the training data while performance on validation (or test) data is noticeably weaker.  \n- It occurs when a model captures details that are specific to the training examples rather than the underlying signal that applies to new data.  \n\n**What to do next**\n\n- Use regularization, simplify the model, gather more representative data, or apply techniques such as cross‑validation to detect and reduce overfitting.\n\n**Sources**\n\n- Doc 2 – “Overfitting occurs when a model learns noise or details specific to its training examples and performs poorly on new data… associated with very strong training performance and weaker validation performance.”  \n- Doc 1 – Discusses the need for validation performance to guide model selection and avoid over‑optimistic metrics.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -0.865,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 2,
+          "score": -1.2344,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 3,
+          "score": -2.0923,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 4,
+          "score": -4.1764,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 5,
+          "score": -8.225,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 6,
+          "score": -8.8743,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 7,
+          "score": -8.8993,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 8,
+          "score": -9.401,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 9,
+          "score": -9.986,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 10,
+          "score": -10.7243,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly identifies overfitting as the likely problem, matching the expected answer.",
+      "faithfulness_reason": "All statements, including the definition of overfitting and mitigation strategies, are supported by the retrieved documents (e.g., Doc 2 describing overfitting and remedies).",
+      "latency": {
+        "retrieval_sec": 1.477,
+        "generation_sec": 17.521,
+        "total_sec": 18.999
+      }
+    },
+    {
+      "qid": "Q06",
+      "question": "Give two examples of data leakage and one way to prevent it.",
+      "answerability": "Answerable",
+      "evidence": [
+        "S05"
+      ],
+      "evidence_found": {
+        "S05": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Examples include scaling the full dataset before splitting and using a feature recorded after the outcome. Fit preprocessing on training data only and use a split strategy that matches deployment.",
+      "scoring_note": "Two examples plus a prevention method.",
+      "generated_answer": "**Examples of data leakage**\n\n1. **Scaling the whole dataset before splitting** – If you compute a scaler (e.g., mean‑std normalization) on all rows and then split into train/validation/test, information from the test set leaks into the training process.  \n2. **Using a feature that is recorded after the outcome** – Including a variable that is only known after the target event (e.g., “time‑to‑resolution” when predicting whether a ticket will be resolved) gives the model access to future information that would not be available at prediction time.\n\n**How to prevent data leakage**\n\n- **Perform all preprocessing (such as scaling, encoding, or feature engineering) *only* on the training data, then apply the fitted transformations unchanged to the validation, test, and production data.** This ensures that no information from the hold‑out sets influences model training.\n\n**Sources**\n\n- Doc 1 – “Data leakage occurs when information unavailable at prediction time… Examples include scaling the entire dataset before splitting, using a feature recorded after the outcome, or allowing duplicate records…”.  \n- Doc 7 – “Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production data.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -4.2336,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 2,
+          "score": -5.6268,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 3,
+          "score": -9.2888,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 4,
+          "score": -9.8721,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 5,
+          "score": -9.998,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 6,
+          "score": -10.2543,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 7,
+          "score": -10.925,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 8,
+          "score": -11.1919,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 9,
+          "score": -11.2536,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.3475,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer provides two valid examples of data leakage (scaling before split and using post-outcome features) and a correct prevention method (fit preprocessing only on training data).",
+      "faithfulness_reason": "All statements are directly supported by Doc 1 (examples) and Doc 7 (prevention), with no unsupported or hallucinated content.",
+      "latency": {
+        "retrieval_sec": 1.684,
+        "generation_sec": 16.841,
+        "total_sec": 18.525
+      }
+    },
+    {
+      "qid": "Q07",
+      "question": "In an imbalanced fraud-detection dataset, why might accuracy be misleading?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S06"
+      ],
+      "evidence_found": {
+        "S06": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "A model can predict the majority non-fraud class most of the time and still achieve high accuracy while missing many fraud cases. Precision, recall, F1, and a confusion matrix provide more detail.",
+      "scoring_note": "Must explain class imbalance and missed positives.",
+      "generated_answer": "**Answer**\n\nIn a fraud‑detection problem the number of fraudulent cases (the positive class) is usually far smaller than the number of legitimate transactions (the negative class).  \nIf you evaluate a model only with **accuracy**—the fraction of all predictions that are correct—a classifier that simply predicts “non‑fraud” for every record can still achieve a very high accuracy because it is right on the overwhelming majority of cases.  \n\nThis high accuracy hides the fact that the model is failing to identify any fraud at all (i.e., it has very low **recall** and **precision** for the minority class). In imbalanced settings you need metrics that focus on the positive class—such as precision, recall, F1‑score, a confusion matrix, or PR‑AUC—to see whether the model is actually detecting fraud rather than just getting the majority class right.  \n\n**Sources**  \n- Doc 1: “In imbalanced classification, accuracy can look high while minority‑class detection is poor; precision, recall, F1, a confusion matrix, and sometimes PR‑AUC provide additional insight.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 0.5203,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 2,
+          "score": -8.3185,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 3,
+          "score": -8.4426,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 4,
+          "score": -8.9142,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 5,
+          "score": -8.9978,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 6,
+          "score": -10.016,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 7,
+          "score": -10.6238,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 8,
+          "score": -10.7717,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 9,
+          "score": -11.1732,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.2984,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly explains that in a fraud‑detection dataset the minority class (fraud) can be missed, leading to high accuracy despite poor detection, and mentions the need for precision, recall, F1, and a confusion matrix.",
+      "faithfulness_reason": "All statements are directly supported by the retrieved Doc 1, which discusses accuracy being misleading in imbalanced classification and recommends additional metrics.",
+      "latency": {
+        "retrieval_sec": 1.784,
+        "generation_sec": 16.5,
+        "total_sec": 18.284
+      }
+    },
+    {
+      "qid": "Q08",
+      "question": "What does recall measure in classification?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S06"
+      ],
+      "evidence_found": {
+        "S06": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Recall is the fraction of actual positive cases that the model correctly identifies.",
+      "scoring_note": "Equivalent formula: TP/(TP+FN), if defined correctly.",
+      "generated_answer": "**Recall** (also called *sensitivity* or the *true‑positive rate*) measures the proportion of actual positive cases that the model correctly identifies. In other words, it is the fraction of all true positives that are captured by the classifier:\n\n\\[\n\\text{Recall} = \\frac{\\text{Number of correctly predicted positives}}{\\text{Total number of actual positives}}\n\\]\n\nThus, recall answers the question “of the items that truly belong to the positive class, how many did the model find?”\n\n**Source**  \n- Doc 1 – “Recall is the fraction of actual positives that are correctly identified.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 1.9782,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 2,
+          "score": -8.5866,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 3,
+          "score": -9.9573,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 4,
+          "score": -10.1105,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 5,
+          "score": -10.9815,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 6,
+          "score": -11.0105,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 7,
+          "score": -11.181,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 8,
+          "score": -11.3802,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 9,
+          "score": -11.385,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.4503,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 1,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly states that recall is the fraction of actual positive cases correctly identified, matching the expected definition.",
+      "faithfulness_reason": "The core definition is supported by Doc 1, but the additional claim that recall is also called \"sensitivity\" or \"true‑positive rate\" is not present in the retrieved context.",
+      "latency": {
+        "retrieval_sec": 1.589,
+        "generation_sec": 19.211,
+        "total_sec": 20.8
+      }
+    },
+    {
+      "qid": "Q09",
+      "question": "Which regression metric penalizes large errors more strongly: MAE or MSE?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S07"
+      ],
+      "evidence_found": {
+        "S07": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "MSE, because it squares errors before averaging, giving larger errors disproportionately more weight.",
+      "scoring_note": "RMSE also derives from squared errors, but the direct answer is MSE.",
+      "generated_answer": "**Answer:**  \nThe **Mean Squared Error (MSE)** penalizes large errors more strongly than the Mean Absolute Error (MAE). MSE squares each error before averaging, so larger deviations contribute disproportionately more to the final score, whereas MAE simply averages the absolute differences.\n\n**Source:**  \n- Doc 1 – “Mean squared error (MSE) averages squared errors and penalizes large errors more heavily.”【Doc 1】",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 3.4645,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 2,
+          "score": -8.5773,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 3,
+          "score": -8.732,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 4,
+          "score": -11.2212,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 5,
+          "score": -11.2238,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 6,
+          "score": -11.2316,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 7,
+          "score": -11.4271,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 8,
+          "score": -11.4427,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 9,
+          "score": -11.482,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.4985,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly identifies MSE as the metric that penalizes large errors more strongly, matching the expected ground truth.",
+      "faithfulness_reason": "The statement is directly supported by Doc 1, which explicitly says MSE averages squared errors and penalizes large errors more heavily.",
+      "latency": {
+        "retrieval_sec": 1.734,
+        "generation_sec": 16.455,
+        "total_sec": 18.189
+      }
+    },
+    {
+      "qid": "Q10",
+      "question": "Why should the final test set not be used repeatedly to choose hyperparameters?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S03",
+        "S08"
+      ],
+      "evidence_found": {
+        "S03": true,
+        "S08": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Repeated selection based on test results leaks information from the test set into development and makes the final performance estimate less trustworthy.",
+      "scoring_note": "Must mention biased/less trustworthy final estimate.",
+      "generated_answer": "The test set is meant to give a **single, unbiased estimate of how the model will perform on truly unseen data** after all modeling decisions have been made.  \nIf you repeatedly adjust hyper‑parameters (or any other choices) by looking at the test‑set results, the model indirectly “learns” information from that set. This **leaks information** from the evaluation data into the development process, so the test‑set performance no longer reflects an independent assessment; it becomes overly optimistic and unreliable for future deployment.\n\nTherefore, the test set should be used only once—after the training, validation, and any hyper‑parameter tuning are finished—to obtain a trustworthy final performance metric.  \n\n**Sources**  \n- Doc 1: “The test set is reserved for a final, relatively unbiased estimate of performance after choices are complete. Repeatedly tuning against the test set leaks information … and makes the final estimate less trustworthy.”  \n- Doc 1 also discusses data leakage as a related risk.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 4.1492,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 2,
+          "score": -0.5802,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 3,
+          "score": -10.2575,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 4,
+          "score": -10.5958,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 5,
+          "score": -10.9444,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 6,
+          "score": -11.0082,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 7,
+          "score": -11.143,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 8,
+          "score": -11.1798,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 9,
+          "score": -11.2546,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -11.4378,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly explains that repeatedly using the test set for hyperparameter tuning leaks information and makes the final performance estimate less trustworthy, matching the expected answer.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1, which mentions that tuning on the test set leaks information and reduces trustworthiness of the final estimate.",
+      "latency": {
+        "retrieval_sec": 1.712,
+        "generation_sec": 15.69,
+        "total_sec": 17.402
+      }
+    },
+    {
+      "qid": "Q11",
+      "question": "Why is feature scaling often important for KNN?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S09"
+      ],
+      "evidence_found": {
+        "S09": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "KNN relies on distances between examples. Features with larger numerical scales can dominate those distances, so scaling can make features contribute more comparably.",
+      "scoring_note": "Do not say scaling is always mandatory for every distance or dataset.",
+      "generated_answer": "Feature‑scaling is crucial for k‑nearest‑neighbors because KNN makes predictions by measuring distances between examples.  \nIf the raw features have very different numeric ranges, the dimensions with larger scales will dominate the distance computation, causing the algorithm to treat those features as far more important than the others. By scaling (e.g., standardizing to zero‑mean, unit‑variance) each feature, all dimensions contribute more equally to the distance metric, leading to more reliable neighbor selection and better model performance.  \n\n**Source**: Doc 1, Section S09 – “Features with large numerical scales can dominate distance calculations, so scaling is often important for KNN. Standardization commonly subtracts the training‑set mean and divides by the training‑set standard deviation for each feature.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 2.2568,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 2,
+          "score": -9.4406,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 3,
+          "score": -10.0733,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 4,
+          "score": -11.1531,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 5,
+          "score": -11.2804,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 6,
+          "score": -11.3689,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 7,
+          "score": -11.3796,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 8,
+          "score": -11.3834,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 9,
+          "score": -11.4737,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.503,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly explains that KNN uses distance calculations and that features with larger scales can dominate, so scaling makes feature contributions comparable, matching the expected answer.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1, which states that large‑scale features can dominate distance calculations and that scaling is often important for KNN.",
+      "latency": {
+        "retrieval_sec": 1.731,
+        "generation_sec": 16.546,
+        "total_sec": 18.277
+      }
+    },
+    {
+      "qid": "Q12",
+      "question": "What is one key difference between a decision tree and a random forest?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S10"
+      ],
+      "evidence_found": {
+        "S10": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "A decision tree uses one sequence of splits; a random forest aggregates predictions from many trees trained with randomness, often reducing variance.",
+      "scoring_note": "Both single-tree and ensemble aspects should be present.",
+      "generated_answer": "**Key difference:**  \nA decision tree is a single, interpretable model that makes predictions by following one sequence of feature‑based splits. A random forest, on the other hand, is an ensemble that builds many decision trees on different random subsets of the data (and often on random subsets of features) and then aggregates their predictions, which usually reduces variance and improves accuracy but makes the overall model less straightforward to interpret.\n\n**Source**  \n- *Doc 1* – “Decision trees and random forests” section (S10).",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -2.6284,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 2,
+          "score": -10.091,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 3,
+          "score": -11.1518,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 4,
+          "score": -11.2881,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 5,
+          "score": -11.2974,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 6,
+          "score": -11.3347,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 7,
+          "score": -11.3814,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 8,
+          "score": -11.4073,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 9,
+          "score": -11.4137,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -11.4471,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly states that a decision tree is a single model using one sequence of splits, while a random forest is an ensemble of many trees trained with randomness and aggregates predictions, reducing variance.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1 (S10), which describes the single-tree vs. ensemble nature, randomness in training, and variance reduction.",
+      "latency": {
+        "retrieval_sec": 1.68,
+        "generation_sec": 16.756,
+        "total_sec": 18.436
+      }
+    },
+    {
+      "qid": "Q13",
+      "question": "What does XGBoost do, and is it guaranteed to beat every other model?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S11"
+      ],
+      "evidence_found": {
+        "S11": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "XGBoost is an optimized gradient-boosting library that builds an additive ensemble in stages. It is often effective on tabular data but is not guaranteed to outperform every alternative.",
+      "scoring_note": "Must reject the guarantee.",
+      "generated_answer": "**XGBoost** (eXtreme Gradient Boosting) is an optimized implementation of the gradient‑boosting algorithm.  \n- It builds an additive model in stages, where each new weak learner (typically a decision tree) tries to correct the errors of the current ensemble according to a chosen loss function.  \n- The library adds engineering features such as regularization, parallelized tree construction, and efficient memory use, making training fast and scalable, especially on structured tabular data.\n\n**Guarantee of superiority?**  \nNo. While XGBoost often performs very well on many tabular problems, the documentation explicitly notes that it “is not guaranteed to outperform every alternative.” Model performance depends on the data, task, and how well other algorithms are tuned.\n\n**Sources**  \n- Doc 1, Section S11 – “Gradient boosting and XGBoost.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 0.381,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 2,
+          "score": -9.3817,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 3,
+          "score": -10.1963,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 4,
+          "score": -10.5847,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 5,
+          "score": -10.9869,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 6,
+          "score": -11.1054,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 7,
+          "score": -11.2939,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 8,
+          "score": -11.4006,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 9,
+          "score": -11.4586,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.4976,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly explains that XGBoost is an optimized gradient‑boosting library that builds an additive ensemble and states that it is not guaranteed to beat every other model, matching the expected answer.",
+      "faithfulness_reason": "All key statements are directly supported by Doc 1, and no unsupported or contradictory information is introduced.",
+      "latency": {
+        "retrieval_sec": 1.759,
+        "generation_sec": 17.64,
+        "total_sec": 19.399
+      }
+    },
+    {
+      "qid": "Q14",
+      "question": "Briefly explain how a neural network learns.",
+      "answerability": "Answerable",
+      "evidence": [
+        "S12"
+      ],
+      "evidence_found": {
+        "S12": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "It adjusts learned weights to reduce a loss function, typically using gradient-based optimization and backpropagation.",
+      "scoring_note": "A short explanation is enough.",
+      "generated_answer": "A neural network learns by **adjusting the weights of its connections** so that its predictions become more accurate.  \nDuring training the network processes input data, computes a loss that measures the error between its predictions and the true targets, and then uses **gradient‑based optimization (e.g., stochastic gradient descent) together with back‑propagation** to propagate the error gradients back through the layers. These gradients tell each weight how to change to reduce the loss, and the optimizer updates the weights iteratively until the loss is minimized or an acceptable performance is reached【Doc 1】.  \n\n**Sources**  \n- Doc 1 (Neural networks and deep learning)",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 3.2701,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 2,
+          "score": -5.6353,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 3,
+          "score": -10.3355,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 4,
+          "score": -10.4898,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 5,
+          "score": -10.5976,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 6,
+          "score": -10.9606,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 7,
+          "score": -11.1658,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 8,
+          "score": -11.1714,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 9,
+          "score": -11.2022,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -11.3598,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 1,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly states that a neural network learns by adjusting weights to reduce a loss function using gradient‑based optimization and back‑propagation, matching the expected explanation.",
+      "faithfulness_reason": "The core statements are supported by Doc 1, but the added example of \"stochastic gradient descent\" is not mentioned in the retrieved context, introducing an unsupported detail.",
+      "latency": {
+        "retrieval_sec": 1.608,
+        "generation_sec": 17.757,
+        "total_sec": 19.365
+      }
+    },
+    {
+      "qid": "Q15",
+      "question": "What is an embedding used for in semantic search?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S13"
+      ],
+      "evidence_found": {
+        "S13": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "An embedding maps text into a numerical vector intended to capture semantic or structural relationships; vectors can be compared to retrieve passages related to a query.",
+      "scoring_note": "Mention vectors and similarity/retrieval.",
+      "generated_answer": "**Answer**\n\nIn semantic search an *embedding* is a numerical vector representation of a piece of text (or other data) that captures its semantic meaning. Both the user’s query and each candidate passage are converted into embeddings, and then a similarity or distance measure (e.g., cosine similarity) is used to compare these vectors. The most similar vectors indicate the passages that are most semantically related to the query, which are then retrieved for further processing.\n\n**Source**\n\n- Doc 1 (Embedding and semantic search section) – describes how an embedding model maps text to vectors and how those vectors are compared in semantic search.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 3.6514,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 2,
+          "score": -3.3243,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 3,
+          "score": -5.3178,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 4,
+          "score": -8.222,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 5,
+          "score": -10.7475,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 6,
+          "score": -10.8849,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 7,
+          "score": -11.1521,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 8,
+          "score": -11.2363,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 9,
+          "score": -11.241,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.3745,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly states that embeddings map text to vectors and are used to compare similarity for retrieval, matching the expected answer.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1, which describes embeddings as vectors compared using similarity measures in semantic search.",
+      "latency": {
+        "retrieval_sec": 1.734,
+        "generation_sec": 20.608,
+        "total_sec": 22.342
+      }
+    },
+    {
+      "qid": "Q16",
+      "question": "List the main stages of a basic RAG pipeline in order.",
+      "answerability": "Answerable",
+      "evidence": [
+        "S14"
+      ],
+      "evidence_found": {
+        "S14": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Ingest documents, split into chunks, create embeddings, store vectors and metadata, retrieve relevant chunks for a query, optionally rerank them, and generate a grounded answer.",
+      "scoring_note": "Order may vary slightly; include retrieval before generation.",
+      "generated_answer": "**Main stages of a basic Retrieval‑Augmented Generation (RAG) pipeline**\n\n1. **Ingest documents** – load the source material into the system.  \n2. **Chunk the documents** – split each document into smaller passages for indexing.  \n3. **Create embeddings** – encode each chunk into a vector representation.  \n4. **Store vectors & metadata** – save the embeddings (and any associated metadata) in a vector store.  \n5. **Retrieve relevant chunks** – given a user query, fetch the most similar passage vectors.  \n6. **(Optional) Rerank candidates** – re‑score the retrieved passages to improve ordering.  \n7. **Generate a grounded response** – feed the retrieved (and possibly reranked) chunks to a language model, which produces the final answer.\n\n**Source**: AI / ML Knowledge Base — RAG Ingestion Copy, “Page 4” describing the common RAG pipeline.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -2.5899,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -6.6817,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 3,
+          "score": -7.937,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 4,
+          "score": -10.4681,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 5,
+          "score": -11.3662,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 6,
+          "score": -11.3772,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 7,
+          "score": -11.4004,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 8,
+          "score": -11.4062,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 9,
+          "score": -11.4404,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -11.4664,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer lists all required stages—ingest, chunk, embed, store, retrieve, optional rerank, and generate—in the correct order.",
+      "faithfulness_reason": "Each stage is directly supported by the retrieved document (Doc 1) which describes the same pipeline.",
+      "latency": {
+        "retrieval_sec": 1.978,
+        "generation_sec": 15.739,
+        "total_sec": 17.717
+      }
+    },
+    {
+      "qid": "Q17",
+      "question": "What is top-k in retrieval, and what trade-off occurs when k increases?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S15"
+      ],
+      "evidence_found": {
+        "S15": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Top-k is the number of candidate passages returned. Increasing k may improve evidence coverage but can also add irrelevant context, latency, and token cost.",
+      "scoring_note": "Mention both potential benefit and cost.",
+      "generated_answer": "**Top‑k** refers to the number *k* of candidate passages (or document chunks) that the first‑stage retriever returns for a given query.  \n\n**Trade‑off when *k* is increased**  \n- **Pros:** A larger *k* raises the chance that the relevant evidence is among the retrieved set, improving coverage and recall.  \n- **Cons:** It also brings more irrelevant material, which can dilute the signal for the generator, increase latency, and raise the token‑usage cost of downstream processing (e.g., reranking or generation).\n\n**Source**  \n- AI / ML Knowledge Base — RAG Ingestion Copy, Page 4 (Doc 1).",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -0.9636,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -9.3972,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 3,
+          "score": -9.558,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 4,
+          "score": -9.8332,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 5,
+          "score": -10.5562,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 6,
+          "score": -11.0273,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 7,
+          "score": -11.0619,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 8,
+          "score": -11.1264,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 9,
+          "score": -11.3154,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 10,
+          "score": -11.3638,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly defines top‑k as the number of retrieved candidate passages and explains both the benefit (greater coverage/recall) and the costs (more irrelevant context, higher latency, and token usage) as required.",
+      "faithfulness_reason": "All statements are directly supported by the retrieved document (Doc 1), with no extraneous or hallucinated information.",
+      "latency": {
+        "retrieval_sec": 1.728,
+        "generation_sec": 14.387,
+        "total_sec": 16.115
+      }
+    },
+    {
+      "qid": "Q18",
+      "question": "Can a reranker find evidence that the first-stage retriever did not return? Explain.",
+      "answerability": "Answerable",
+      "evidence": [
+        "S15"
+      ],
+      "evidence_found": {
+        "S15": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Not in a typical retrieve-then-rerank pipeline. A reranker reorders retrieved candidates; it cannot recover evidence absent from the candidate set.",
+      "scoring_note": "Must distinguish reranking from first-stage retrieval.",
+      "generated_answer": "**Answer**\n\nNo. A reranker cannot discover or add evidence that the first‑stage retriever failed to return.  \nThe reranker’s role is to take the set of passages already retrieved, score each passage against the query, and reorder (or possibly filter) that same set. Because it works only on the retrieved candidates, any relevant document that was never included in the first‑stage results cannot be recovered or introduced by the reranker.\n\n**Source**  \n- *AI / ML Knowledge Base — RAG Ingestion Copy*, Doc 1: “A reranker scores query–passage pairs after initial retrieval and reorders candidates; it can improve ordering **but cannot recover evidence that the first-stage retriever never returned**.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 0.2226,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -9.6705,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 3,
+          "score": -11.1657,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 4,
+          "score": -11.2159,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 5,
+          "score": -11.2236,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 6,
+          "score": -11.2455,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 7,
+          "score": -11.2482,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 8,
+          "score": -11.256,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 9,
+          "score": -11.3347,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.3895,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly states that a reranker cannot find evidence missing from the first-stage retriever, matching the expected answer.",
+      "faithfulness_reason": "All claims are directly supported by Doc 1, which explicitly says a reranker cannot recover evidence that the first-stage retriever never returned.",
+      "latency": {
+        "retrieval_sec": 1.717,
+        "generation_sec": 19.411,
+        "total_sec": 21.128
+      }
+    },
+    {
+      "qid": "Q19",
+      "question": "Name two retrieval metrics and two answer-quality checks for RAG.",
+      "answerability": "Answerable",
+      "evidence": [
+        "S16"
+      ],
+      "evidence_found": {
+        "S16": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Retrieval metrics include Recall@k, Precision@k, and reciprocal rank. Answer checks include correctness against a reference, faithfulness to retrieved context, relevance, and appropriate abstention.",
+      "scoring_note": "At least two examples from each category.",
+      "generated_answer": "**Retrieval metrics (examples)**  \n1. **Recall @ k** – measures whether at least one relevant passage appears among the top k retrieved items.  \n2. **Precision @ k** – measures what proportion of the top k retrieved items are actually relevant.  \n\n**Answer‑quality checks (examples)**  \n1. **Correctness / faithfulness** – verifies that the generated answer is factually correct and stays faithful to the retrieved evidence.  \n2. **Relevance to the question** – checks that the answer directly addresses the user’s query (and optionally that the system abstains when no supporting evidence is found).  \n\n**Sources**  \n- Retrieval‑augmented generation evaluation section, Doc 1 (RAG evaluation).",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 2.1405,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -4.9402,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 3,
+          "score": -6.0425,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 4,
+          "score": -9.2481,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 5,
+          "score": -9.4541,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 6,
+          "score": -10.6582,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 7,
+          "score": -10.7513,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 8,
+          "score": -11.1096,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 9,
+          "score": -11.3594,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 10,
+          "score": -11.4248,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "Provides two valid retrieval metrics (Recall@k, Precision@k) and two answer-quality checks (correctness/faithfulness and relevance) as required.",
+      "faithfulness_reason": "All statements are directly supported by the retrieved document (Doc 1) which lists these metrics and checks.",
+      "latency": {
+        "retrieval_sec": 1.099,
+        "generation_sec": 16.067,
+        "total_sec": 17.166
+      }
+    },
+    {
+      "qid": "Q20",
+      "question": "Why should an ML/RAG system record model, prompt, embedding, index, and dataset versions?",
+      "answerability": "Answerable",
+      "evidence": [
+        "S17"
+      ],
+      "evidence_found": {
+        "S17": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "Version tracking makes experiments reproducible and helps identify which configuration caused a change in results.",
+      "scoring_note": "Accept equivalent explanation.",
+      "generated_answer": "Recording the versions of the model, prompt, embedding model, index, and dataset is essential for **reproducibility and reliability**. By tracking these components, you can:\n\n* **Re‑create exactly the same results** later (e.g., for debugging, audits, or scientific reporting).  \n* **Detect and manage changes** in the knowledge base—when source documents are added or removed, the index version shows which data the system actually used.  \n* **Provide a clear fallback** if retrieval fails or the evidence does not support an answer, because you know precisely which artifacts produced the faulty output.\n\nIn short, version‑tracking ensures that every answer can be traced back to the exact model, prompt, embeddings, index, and data that generated it, making the system transparent, maintainable, and trustworthy.  \n\n**Sources**  \n- Doc 1 (Score 4.254): “Track model, prompt, embedding, index, and dataset versions so results are reproducible… A reliable system should also have a clear fallback when retrieval fails or the evidence does not support an answer.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": 4.2543,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 2,
+          "score": 1.588,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 3,
+          "score": -1.4597,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 4,
+          "score": -2.0149,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 5,
+          "score": -2.5703,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 6,
+          "score": -4.188,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 7,
+          "score": -9.442,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 8,
+          "score": -10.8269,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 9,
+          "score": -11.0457,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.2176,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": null,
+      "correctness_reason": "The answer correctly explains that version tracking ensures reproducibility and helps identify configuration changes, matching the expected answer.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1, which mentions reproducibility, handling changes, and providing a fallback.",
+      "latency": {
+        "retrieval_sec": 1.446,
+        "generation_sec": 18.139,
+        "total_sec": 19.585
+      }
+    },
+    {
+      "qid": "Q21",
+      "question": "What exact validation accuracy did the author of this PDF achieve on their own KNN project?",
+      "answerability": "Unanswerable",
+      "evidence": [],
+      "evidence_found": {},
+      "retrieval_success": null,
+      "expected_answer": "The corpus does not provide an author's personal KNN project results. The system should say this information is not available in the supplied sources.",
+      "scoring_note": "Must not invent a percentage or imply this PDF reports a real project.",
+      "generated_answer": "The provided documents do not contain any specific numeric result for a validation‑accuracy measurement on a K‑nearest‑neighbors (KNN) project. They discuss KNN concepts (e.g., the importance of feature scaling, typical hyper‑parameters) but no actual performance figures are given.\n\n**Sources**\n\n- Doc 1 – “S09 — Feature scaling and K‑nearest neighbors” (describes KNN but provides no accuracy numbers).  \n- All other documents (Docs 2‑10) contain no mention of a KNN validation‑accuracy result.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -6.194,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 2,
+          "score": -8.8504,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 3,
+          "score": -10.5878,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 4,
+          "score": -10.7484,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 5,
+          "score": -10.8303,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 6,
+          "score": -10.849,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 7,
+          "score": -11.0915,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 8,
+          "score": -11.3556,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 9,
+          "score": -11.3769,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 10,
+          "score": -11.4511,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": 2,
+      "correctness_reason": "The answer correctly states that no validation accuracy is provided in the supplied documents, which matches the expected unanswerable response.",
+      "faithfulness_reason": "All claims are directly supported by the retrieved context: Doc 1 discusses KNN without any accuracy figures, and the other documents contain no such information.",
+      "latency": {
+        "retrieval_sec": 1.734,
+        "generation_sec": 18.472,
+        "total_sec": 20.206
+      }
+    },
+    {
+      "qid": "Q22",
+      "question": "Which embedding model and vector database does the author recommend as the single best production",
+      "answerability": "Unanswerable",
+      "evidence": [],
+      "evidence_found": {},
+      "retrieval_success": null,
+      "expected_answer": "The corpus does not name a universally best embedding-model/vector-database combination. Selection depends on the use case and should be evaluated empirically.",
+      "scoring_note": "Should not invent a specific pair.",
+      "generated_answer": "**Answer:**  \nThe provided documents do not contain a specific recommendation for a single “best” embedding model or vector database for production use. They discuss embedding models and vector‑search concepts in general terms (e.g., how embeddings map text to vectors and are used for semantic search) but do not name a particular model or database as the preferred choice.\n\n**Sources**  \n- Doc 2 – “Embeddings and semantic search” (describes embeddings generally, without naming a specific model).  \n- Doc 1 – RAG pipeline overview (mentions creating embeddings and storing vectors, but no specific recommendation).  \n- All other documents (Docs 3‑10) focus on RAG processes, evaluation, and ML fundamentals and do not specify a particular embedding model or vector database.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -4.7662,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -5.7815,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 3,
+          "score": -7.5967,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 4,
+          "score": -7.6802,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 5,
+          "score": -10.748,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 6,
+          "score": -10.9305,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 7,
+          "score": -11.2414,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 8,
+          "score": -11.3709,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 9,
+          "score": -11.4462,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.4636,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": 2,
+      "correctness_reason": "The answer correctly identifies that the documents do not provide a specific best embedding model or vector database, matching the expected unanswerable response.",
+      "faithfulness_reason": "All statements are supported by the retrieved documents, and no unsupported or invented details are present.",
+      "latency": {
+        "retrieval_sec": 1.745,
+        "generation_sec": 15.883,
+        "total_sec": 17.628
+      }
+    },
+    {
+      "qid": "Q23",
+      "question": "What is the current market salary for an AI engineer in Kochi today?",
+      "answerability": "Unanswerable",
+      "evidence": [],
+      "evidence_found": {},
+      "retrieval_success": null,
+      "expected_answer": "The supplied corpus contains no current salary data. The system should say it cannot answer from this knowledge base.",
+      "scoring_note": "Do not answer from general knowledge; this is a corpus-grounding test.",
+      "generated_answer": "I’m sorry, but the provided documents do not contain any information about current market salaries for AI engineers in Kochi (or any other location). Therefore I can’t answer that question based on the given context.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -11.1772,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 2,
+          "score": -11.2428,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 3,
+          "score": -11.2621,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 4,
+          "score": -11.2659,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 5,
+          "score": -11.2933,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 6,
+          "score": -11.2943,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 7,
+          "score": -11.3112,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 8,
+          "score": -11.3697,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 9,
+          "score": -11.3871,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 10,
+          "score": -11.4395,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": 2,
+      "correctness_reason": "The answer correctly identifies the question as unanswerable from the provided corpus and abstains from providing a salary figure.",
+      "faithfulness_reason": "The statement that the documents contain no salary information is accurate and fully supported by the retrieved context, with no hallucinated details.",
+      "latency": {
+        "retrieval_sec": 1.067,
+        "generation_sec": 16.176,
+        "total_sec": 17.244
+      }
+    },
+    {
+      "qid": "Q24",
+      "question": "According to the corpus, what exact chunk size guarantees perfect RAG accuracy?",
+      "answerability": "Unanswerable",
+      "evidence": [
+        "S15"
+      ],
+      "evidence_found": {
+        "S15": true
+      },
+      "retrieval_success": 1,
+      "expected_answer": "No chunk size guarantees perfect RAG accuracy. The corpus suggests testing chunk sizes and explains trade-offs between context loss and distracting material.",
+      "scoring_note": "Correctly reject the false premise.",
+      "generated_answer": "The provided documents do not specify any exact chunk size that guarantees perfect Retrieval‑Augmented Generation (RAG) accuracy. The only information about chunking (Doc 1) notes that:\n\n- “Chunks that are too small may lose context; chunks that are too large may include distracting material and reduce retrieval precision.”  \n- No specific numeric chunk size is given, nor is any claim made that a particular size ensures perfect accuracy.\n\n**Therefore, the corpus does not contain enough information to answer the question.**\n\n**Sources**\n\n- Doc 1 – “Chunking divides source documents into smaller passages for indexing and retrieval… Chunks that are too small may lose context; chunks that are too large may include distracting material and reduce retrieval precision.”",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -2.693,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -8.4632,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 3,
+          "score": -10.1988,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 4,
+          "score": -11.0751,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 5,
+          "score": -11.2352,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 6,
+          "score": -11.2715,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 7,
+          "score": -11.3742,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 8,
+          "score": -11.4423,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        },
+        {
+          "rank": 9,
+          "score": -11.4554,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 10,
+          "score": -11.4736,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": 2,
+      "correctness_reason": "The answer correctly states that no exact chunk size guarantees perfect RAG accuracy, matching the ground truth that the question is unanswerable.",
+      "faithfulness_reason": "All statements are directly supported by Doc 1, which mentions trade‑offs of chunk size but provides no specific size guaranteeing perfect accuracy.",
+      "latency": {
+        "retrieval_sec": 1.096,
+        "generation_sec": 17.431,
+        "total_sec": 18.527
+      }
+    },
+    {
+      "qid": "Q25",
+      "question": "What is the name of the company that created the benchmark's embedding model?",
+      "answerability": "Unanswerable",
+      "evidence": [],
+      "evidence_found": {},
+      "retrieval_success": null,
+      "expected_answer": "The corpus does not specify an embedding model or its creator.",
+      "scoring_note": "Must abstain rather than guess.",
+      "generated_answer": "The provided documents do not contain any information about the company that created the benchmark’s embedding model. No company name or specific benchmark‑related embedding model is mentioned in the excerpts.\n\n**Sources**\n\n- All excerpts (Docs 1‑10) – none reference a benchmark embedding model or its creator.",
+      "retrieved_ranks": [
+        {
+          "rank": 1,
+          "score": -5.5029,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 4 Retrieval-Augmented Generation combines retrieval from an external kn"
+        },
+        {
+          "rank": 2,
+          "score": -5.6486,
+          "preview": "Track model, prompt, embedding, index, and dataset versions so results are reproducible. For changing knowledge, define "
+        },
+        {
+          "rank": 3,
+          "score": -6.0339,
+          "preview": "Validation performance and leakage-safe evaluation should guide model selection. S12 — Neural networks and deep learning"
+        },
+        {
+          "rank": 4,
+          "score": -6.9793,
+          "preview": "Upload this copy to the RAG knowledge base; keep the Golden Evaluation PDF separate. Sections: ML fundamentals, evaluati"
+        },
+        {
+          "rank": 5,
+          "score": -10.2223,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 3 should be interpreted in the context of the target scale and deployme"
+        },
+        {
+          "rank": 6,
+          "score": -11.0077,
+          "preview": "The validation set helps choose models, hyperparameters, or decision thresholds. The test set is reserved for a final, r"
+        },
+        {
+          "rank": 7,
+          "score": -11.0982,
+          "preview": "AI / ML Knowledge Base — RAG Ingestion Copy Page 2 Knowledge sections S01 — What machine learning is Machine learning (M"
+        },
+        {
+          "rank": 8,
+          "score": -11.1515,
+          "preview": "Fit preprocessing steps on training data only, then apply the fitted transformations to validation, test, and production"
+        },
+        {
+          "rank": 9,
+          "score": -11.3142,
+          "preview": "AI / MACHINE LEARNING KNOWLEDGE BASE Knowledge-only copy for Retrieval-Augmented Generation testing Purpose This documen"
+        },
+        {
+          "rank": 10,
+          "score": -11.3359,
+          "preview": "Learning rate, number of boosting rounds, tree depth, row/column subsampling, and regularization are common tuning choic"
+        }
+      ],
+      "correctness_score": 2,
+      "faithfulness_score": 2,
+      "abstention_score": 2,
+      "correctness_reason": "The answer correctly identifies the question as unanswerable given the provided documents and does not provide an invented company name.",
+      "faithfulness_reason": "All statements are directly supported by the retrieved context, which contains no mention of any company associated with a benchmark embedding model.",
+      "latency": {
+        "retrieval_sec": 1.421,
+        "generation_sec": 18.52,
+        "total_sec": 19.942
+      }
+    }
+  ]
+}
