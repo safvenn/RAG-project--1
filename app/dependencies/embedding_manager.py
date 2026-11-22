@@ -94,6 +94,7 @@ class EmbeddingManager:
                     })
 
                 print(f"Retrieved {len(retrieved_docs)} candidate documents (Stage 1)")
+                print(retrieved_docs)
 
             return retrieved_docs
         except HTTPException:

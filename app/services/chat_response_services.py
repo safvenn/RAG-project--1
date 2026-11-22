@@ -1,21 +1,33 @@
-
+from langchain_core.prompts import PromptTemplate
+from fastapi import HTTPException
+from app.dependencies.system_propmt_templete import system_prompt_template
 # Response Generation Service: Assembles prompt template with context chunks and calls the LLM.
 
-def chat_response(formatted_context,prompt:str):
+def chat_response(retrieved_docs,prompt:str,llm):
+    
+        if retrieved_docs:
+                formatted_context = "\n\n---\n\n".join(
+                    [
+                        f"[Doc {doc['rank']}] (Score: {doc.get('rerank_score', doc['similarity_score']):.3f})\n{doc['content']}"
+                        for doc in retrieved_docs
+                    ]
+                )
+        else:
+            formatted_context = "No relevant context found in uploaded documents."
+    
+    
+    
     # Formats the grounded prompt template with retrieved knowledge context and invokes the Groq LLM
+
+
+        
 
 
         prompt_template = PromptTemplate(
             input_variables=["context", "question"],
-            template="""You are a helpful AI assistant. Use the following context to answer the question accurately and concisely.
+            template=system_prompt_template
+            )
 
-    Context:
-    {context}
-
-    Question: {question}
-
-    Answer: Provide a clear and informative answer based on the context above. If the context doesn't contain enough information to answer the question, say so. Also Provide Sources Where it from in the bottom."""
-        )
 
         formatted_prompt = prompt_template.format(context=formatted_context, question=prompt)
 

@@ -13,7 +13,7 @@ class RerankerManager:
         """
         self.model = CrossEncoder(model_name)
 
-    def rerank(self, query: str, documents: List[Dict[str, Any]], top_n: int = 5) -> List[Dict[str, Any]]:
+    def rerank(self, query: str, documents: List[Dict[str, Any]],threshold: float = 0.0, top_n: int = 5) -> List[Dict[str, Any]]:
         # Feeds (query, text) pairs directly into the cross-encoder and sorts by highest relevance score
         if not documents:
             return []
@@ -30,9 +30,13 @@ class RerankerManager:
 
         # 4. Sort documents descending by rerank score
         reranked_docs = sorted(documents, key=lambda x: x["rerank_score"], reverse=True)
+        
+        
 
         # 5. Take the top_n items and update rank indices
+        
         final_docs = reranked_docs[:top_n]
+        final_docs = [d  for d in reranked_docs if d["rerank_score"] > threshold]
         for i, doc in enumerate(final_docs):
             doc["rank"] = i + 1
 

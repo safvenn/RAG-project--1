@@ -30,6 +30,7 @@ async def lifespan(app: FastAPI):
             model_name='openai/gpt-oss-120b',
             api_key=GROQ_API_KEY,
             temperature=0.1,
+            
         )
 
     yield
