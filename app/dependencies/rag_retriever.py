@@ -28,7 +28,7 @@ class RAGRetriver:
         query: str,
         initial_top_k: int = 20,
         final_top_k: int = 5,
-        threshold: Optional[float] = 0.0
+        threshold: float = 0.0
     ):
         # Two-stage retrieval: broad candidate gathering followed by neural precision reranking
         print(f"Retrieving documents for query: '{query}'")
